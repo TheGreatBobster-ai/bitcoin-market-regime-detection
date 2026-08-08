@@ -6,6 +6,8 @@ Instead of relying only on price, the analysis combines **market, network, excha
 
 > **Key result:** Comparing 3 different feature engineering approaches and 3 unsupervised learning methods shows that **good feature engineering is the core to well functioning regime detection with timeseries-data**. The most useful results were found with engineering **365-day rolling Z-scores → PCA (PC&) → K-Means (k = 4)**. This approach finds not only reliable regimes over different Bitcoin Cycles, but also reoccuring early signals of switching regimes (from Bull peaks to sell-offs, i.e. look at the 2017 or 2021 peaks).
 
+### Best Performing Model and Dataset: 365-Z-Scores K-Means 4
+
 ![Preferred Bitcoin Market Regimes](figures/results-model-k-means-c-k4.png)
 
 ---
@@ -227,7 +229,7 @@ But for future projects, this could be tested as an indicator - generally, a GMM
 │   └── 04_clustering.ipynb
 │
 ├── report/
-│   └── Robert_Puselja_Unsupervised_ML_Report_UniLu_2026.pdf
+│   └── bitcoin-regime-detection-report.pdf
 │
 ├── requirements.txt
 ├── README.md
@@ -250,7 +252,7 @@ But for future projects, this could be tested as an indicator - generally, a GMM
 
 The complete project report contains the detailed methodology, feature selection, dimensionality reduction, clustering experiments, evaluation, interpretation, limitations, and additional results.
 
-📄 [`Robert_Puselja_Unsupervised_ML_Report_UniLu_2026.pdf`](report/bitcoin-regime-detection-report.pdf)
+📄 [`bitcoin-regime-detection-report.pdf`](report/bitcoin-regime-detection-report.pdf)
 
 The five notebooks contain the complete technical analysis and additional experiments that are not reproduced in the README.
 
